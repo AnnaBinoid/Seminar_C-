@@ -3,20 +3,14 @@
 //44 5 78 -> 78
 //22 3 9 -> 22
 
-Task0004HW_maxFrom3numbersConsole.WriteLine("Enter three integers separated by Enter!");
+Console.WriteLine("Enter three integers separated by Enter!");
 int numberOne = Convert.ToInt32(Console.ReadLine());
 int numberTwo = Convert.ToInt32(Console.ReadLine());
 int numberThree = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Your first integer is {numberOne}, your second integer is {numberTwo}, your third integer is {numberThree}!");
+Console.WriteLine($"Your first integer: {numberOne}, your second integer: {numberTwo}, your third integer: {numberThree}!");
 int max = numberOne;
 
-if (max > numberTwo)
-{
-    if (max <= numberThree)
-    {
-        max = numberThree;
-    }
-}
+
 if (max <= numberTwo)
 {
     max = numberTwo;
@@ -25,4 +19,9 @@ if (max <= numberTwo)
         max = numberThree;
     }
 }
+else
+    if (max <= numberThree)
+    {
+        max = numberThree;
+    }
 Console.WriteLine($"Max from them is {max}!");
