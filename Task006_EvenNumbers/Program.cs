@@ -9,6 +9,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number%2 == 0)
 {
-    Console.WriteLine($"Integer {number} is even!");
+    //Console.WriteLine($"Integer {number} is even!");
+    Console.WriteLine("Yes");
 }
-else Console.WriteLine($"Integer {number} is odd!");
+else Console.WriteLine("No");
+//Console.WriteLine($"Integer {number} is odd!");
