@@ -12,7 +12,7 @@ int count = 0;
 
 if (number < 0)
 {
-    Console.WriteLine($"The natural number must be greater than zero. {number} is not positiv. Try again!");
+    Console.WriteLine($"The pozitive number must be greater than zero. {number} is not positiv. Try again!");
 }
 
 else
@@ -26,4 +26,3 @@ else
     }
 
 }
-//Console.WriteLine(number);
