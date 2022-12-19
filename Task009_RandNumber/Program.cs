@@ -12,11 +12,25 @@ Console.WriteLine ($"New random integer is {randNumber}!");
 int ten = randNumber / 10;
 int smallNumber = randNumber % 10;
 
-/*if (ten >= smallNumber)
+int MaxDigit(randNumber)
+{
+    int ten = randNumber / 10;
+    int smallNumber = randNumber % 10;
+
+    int result = ten > smallNumber ? ten : smallNumber;
+    Console.Write($"Max number from {randNumber} is {result}!");
+    return result;
+}
+
+/*Variant 1
+
+if (ten >= smallNumber)
 {
     Console.WriteLine(ten);
 }
 else Console.WriteLine($"Max number from {randNumber} is {smallNumber}");*/
 
+/*Variant 2
+
 int result = ten > smallNumber ? ten : smallNumber;
-Console.Write($"Max number from {randNumber} is {result}!");
+Console.Write($"Max number from {randNumber} is {result}!");*/
