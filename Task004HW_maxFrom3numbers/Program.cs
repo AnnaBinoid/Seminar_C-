@@ -19,9 +19,4 @@ if (max <= numberTwo)
         max = numberThree;
     }
 }
-else
-    if (max <= numberThree)
-    {
-        max = numberThree;
-    }
 Console.WriteLine($"Max from them is {max}!");
