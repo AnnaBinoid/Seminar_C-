@@ -8,24 +8,24 @@
 /*int firstNumber = new Random().Next(10,100);
 int secondNumber = new Random().Next(10, 100);*/
 
-Console.WriteLine("Enter first name!");
+Console.WriteLine("Enter first number!");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second name!");
+Console.WriteLine("Enter second number!");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 
 
-Console.WriteLine($"First random integer is {firstNumber}.");
-Console.WriteLine($"Second random integer is {secondNumber}.");
-Console.WriteLine (Multiple(firstNumber, secondNumber));
+Console.WriteLine($"First integer is {firstNumber}.");
+Console.WriteLine($"Second integer is {secondNumber}.");
+Console.WriteLine(Multiple(firstNumber, secondNumber));
 
-string Multiple (int firstNum, int secondNum)
+string Multiple(int firstNum, int secondNum)
 {
     if (firstNum < secondNum)
     {
-        return "Firs smaller, then second.";
+        return "Firs smaller, then second, can't check the multiplicity. Try again, please!";
     }
     else
-    return firstNum % secondNum == 0 ? "кратно" : $"не кратно, остаток {firstNum % secondNum}";
+        return firstNum % secondNum == 0 ? "Multiple" : $"Not multiple, remainder is {firstNum % secondNum}.";
 
 }
