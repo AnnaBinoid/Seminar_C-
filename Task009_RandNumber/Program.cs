@@ -7,7 +7,7 @@
 85 -> 8 */
 
 int randNumber = new Random().Next(10, 100);
-Console.WriteLine ($"Our random integer is {randNumber}");
+Console.WriteLine($"Our random integer is {randNumber}");
 int ourDigit = MaxDigit(randNumber);
 Console.WriteLine($"Max digit from random integer {randNumber} is {ourDigit}!");
 

@@ -4,7 +4,7 @@
 //a = -9 b = -3 -> max = -3
 // Уточнить в условии насчет диапазона, который может вводить пользователь, т.к. диапазон Int от -2147483648 до 2147483647
 
-Task0004HW_maxFrom3numbersConsole.WriteLine("Enter two integers separated by Enter!");
+Console.WriteLine("Enter two integers separated by Enter!");
 int numberOne = Convert.ToInt32(Console.ReadLine());
 int numberTwo = Convert.ToInt32(Console.ReadLine());
 
