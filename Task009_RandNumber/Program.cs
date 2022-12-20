@@ -6,59 +6,30 @@
 12-> 2
 85 -> 8 */
 
-/*int randNumber = new Random().Next(10, 100);
-Console.WriteLine ($"New random integer is {randNumber}!");*/
+int randNumber = new Random().Next(10, 100);
+Console.WriteLine ($"Our random integer is {randNumber}");
+int ourDigit = MaxDigit(randNumber);
+Console.WriteLine($"Max digit from random integer {randNumber} is {ourDigit}!");
 
-//int ten = randNumber / 10;
-//int smallNumber = randNumber % 10;
-
-
-/*ПЕРЕДЕЛАТЬ ЗАДАЧУ!!!!!
-
-int MaxDigit = MaxDigit(45);
-Console.WriteLine ($"Max number from {randNumber} is {result}!");
-
-int MaxDigit(int number)
+int MaxDigit(int randNum)
 {
-    int ten = randNumber / 10;
-    int smallNumber = randNumber % 10;
+    int tens = randNum / 10;
+    int ones = randNum % 10;
 
-    int result = ten > smallNumber ? ten : smallNumber;
-    return result;
+    return tens > ones ? tens : ones;
 }
 
-int MaxDigit = MaxDigit(randNumber);
-Console.WriteLine ($"Max number from {randNumber} is {result}!");*/
+/* Для частных случаев в параметрах на вход можно использовать конкретные данные, а не переменные.
 
-/*Variant 1
+int firstOurDigit = MaxDigit(15);
+int secondOurDigit = MaxDigit(24);
 
-if (ten >= smallNumber)
+Console.WriteLine ($"Max digit is {firstOurDigit}!");
+Console.WriteLine ($"Max digit is {secondOurDigit}!");
+
+int MaxDigit(int ourDigit)
 {
-    Console.WriteLine(ten);
-}
-else Console.WriteLine($"Max number from {randNumber} is {smallNumber}");*/
+    int tens = ourDigit / 10;
+    int ones = ourDigit % 10;
 
-/*Variant 2
-
-int result = ten > smallNumber ? ten : smallNumber;
-Console.Write($"Max number from {randNumber} is {result}!");*/
-
-
-/* ОТ АНДРЕЯ*/
-
-int maxDigit = MaxDigit(number);
-Console.WriteLine($"Наибольшая цифра числа => {maxDigit}");
-
-int maxDigit1 = MaxDigit(45);
-Console.WriteLine($"Наибольшая цифра числа => {maxDigit1}");
-
-int maxDigit2 = MaxDigit(78);
-Console.WriteLine($"Наибольшая цифра числа => {maxDigit2}");
-
-int MaxDigit(int num) // num = number
-{
-    int firstDigit = num / 10;
-    int secondDigit = num % 10;
-    //int result = firstDigit > secondDigit ? firstDigit : secondDigit;
-    return firstDigit > secondDigit ? firstDigit : secondDigit;
-}
+    return tens > ones ? tens : ones;*/
