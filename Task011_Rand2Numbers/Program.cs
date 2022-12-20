@@ -10,18 +10,17 @@
 int randNumber = new Random().Next(100, 1001);
 Console.WriteLine ($"New random integer is {randNumber}!");
 
-int deleteSecondDigit = deleteSecondDigit(randNumber);
+int deleteSecondDigit = DeleteSecondDigit(randNumber);
 Console.WriteLine ($"New number is {deleteSecondDigit}!");
 
 int DeleteSecondDigit(int num)
-
 {
     int hun = randNumber / 100;
     int ten = randNumber / 10;
     int one = randNumber % 10;
 
     int newNumber = hun*10 + one;
-    return result;
+    return newNumber;
 }
 
 
