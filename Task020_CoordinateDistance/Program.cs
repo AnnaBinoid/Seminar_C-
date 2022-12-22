@@ -30,9 +30,6 @@ double Distance (int x1, int x2, int y1, int y2)
 
 
 
-
-
-
 /*
 Округление
 double num = 5.099873456;

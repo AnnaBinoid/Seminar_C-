@@ -13,11 +13,11 @@ Console.WriteLine($"For number {number} range of values is {result}.");
 
 string Quarter (int num)
 {
-    if  (num == 1) return "xc > 0 && yc > 0";
-    if  (num == 2) return "xc < 0 && yc > 0";
-    if  (num == 3) return "xc < 0 && yc < 0";
-    if  (num == 4) return "xc > 0 && yc < 0";
-    else return ("out of range");
+    if  (num == 1) return "x > 0 ; y > 0";
+    if  (num == 2) return "x < 0 ; y > 0";
+    if  (num == 3) return "x < 0 ; y < 0";
+    if  (num == 4) return "x > 0 ; y < 0";
+    return "Out of range";
 }
 
 
