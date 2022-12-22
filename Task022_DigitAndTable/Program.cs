@@ -15,9 +15,9 @@ else SquareTable(number);
 
 void SquareTable(int num)
 {
-    for (int i = 1 ; i <= num ; i++)
+    for (int i = 1; i <= num; i++)
     {
-        Console.WriteLine($"{i}  |  {Math.Pow(i, 2)}");
+        Console.WriteLine($"{i,4}  |  {Math.Pow(i, 2),4}"); //форматирование в {}
     }
 }
 
