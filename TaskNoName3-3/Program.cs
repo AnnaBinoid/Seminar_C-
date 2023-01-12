@@ -3,19 +3,21 @@
 // Вывести сумму на экран
 
 
-int[] CreateArray()
+int[] CreateArray(int count)
 {
-    return new int[10];
+    return new int[count];
 }
 
-void FillArray(int[] elements)
+void Fill(int[] elements)
 {
     int length = elements.Length;
     int index  = 0;
 
-    for (int i = 0; i <= length; i++)
+    while (index < length)
     {
-        elements[index] = Random.Shared.Next(30);
+        int current = Random.Shared.Next(30);
+        elements[index] = current;
+        index = index + 1;
     }
 }
 
@@ -30,10 +32,12 @@ int GetSum(int[] array)
     {
         int current = array[position];     // current = значению эл-та массива под номером position
 
-        if (0 <= current && current <= 99)
+        if (10 <= current && current <= 99)
         {
             sum = sum + current;
+            
         }
+        position = position + 1;
     }
     return sum;
 }
@@ -47,13 +51,14 @@ string Print(int[] collection)
     while (index < size2)
     {
         int current = collection[index];
-        output = output + $"{current}";
+        output = output + $"{current} ";
+        index = index + 1;
     }
     return output;
 }
 
-int[] arr = CreateArray();
-FillArray(arr);
+int[] arr = CreateArray(5);
+Fill(arr);
 int sum = GetSum(arr);
 
 Console.WriteLine(Print(arr));
