@@ -11,15 +11,17 @@ int product = ProductNumber(number);
 Console.WriteLine($"Factorial of {number} is {product}");
 
 
-int ProductNumber (int digit)
+int ProductNumber(int digit)
 {
     int count = 1;
 
-    for (int i = 1; i <= digit; i++ )
+    for (int i = 1; i <= digit; i++)
     {
+        checked
+        {
         count = count * i;
+        }
     }
-    
+
     return count;
 }
-
