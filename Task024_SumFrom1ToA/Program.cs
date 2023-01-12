@@ -8,7 +8,7 @@
 */
 
 Console.WriteLine("Please, enter your natural number: ");
-int number = int.Parse(Console.ReadLine());       //принимает только строку //Convert.toInt32(Console.ReadLine);
+int number = Convert.ToInt32(Console.ReadLine()); //int.Parse(Console.ReadLine());       //принимает только строку //Convert.toInt32(Console.ReadLine);
 int summ = Summ(number);
 Console.WriteLine($"The sum of the numbers from 1 to {number} is {summ}");
 
